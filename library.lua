@@ -1124,7 +1124,7 @@ local themes = {
 		["Dropdown Option Background"] = Color3.fromRGB(19, 19, 23)
 	},
 
-	chinaboom = {
+	AirHub = {
 		["Accent"] = Color3.fromRGB(150, 100, 150),
 		["Window Background"] = Color3.fromRGB(35, 30, 35),
 		["Window Border"] = Color3.fromRGB(50, 45, 50),
@@ -1143,7 +1143,7 @@ local themes = {
 
 local themeobjects = {}
 
-local library = utility.table({theme = table.clone(themes.chinaboom), folder = "chinaboom", extension = "cfg", flags = {}, open = true, keybind = Enum.KeyCode.RightShift, mousestate = services.InputService.MouseIconEnabled, cursor = nil, holder = nil, connections = {}}, true)
+local library = utility.table({theme = table.clone(themes.AirHub), folder = "chinaboom", extension = "cfg", flags = {}, open = true, keybind = Enum.KeyCode.RightShift, mousestate = services.InputService.MouseIconEnabled, cursor = nil, holder = nil, connections = {}}, true)
 local decode = (syn and syn.crypt.base64.decode) or (crypt and crypt.base64decode) or base64_decode
 library.gradient = decode("iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABuSURBVChTxY9BDoAgDASLGD2ReOYNPsR/+BAfroI7hibe9OYmky2wbUPIOdsXdc1f9WMwppQm+SDGBnUvomAQBH49qzhFEag25869ElzaIXDhD4JGbyoEVxUedN8FKwnfmwhucgKICc+pNB1mZhdCdhsa2ky0FAAAAABJRU5ErkJggg==")
 library.utility = utility
@@ -1369,7 +1369,7 @@ function library:SetTheme(theme)
 end
 
 function library:GetThemes()
-	local themes = {"Default", "Midnight", "chinaboom"}
+	local themes = {"Default", "Midnight", "AirHub"}
 
 	local folderpath = string.format("%s//themes", self.folder)
 
@@ -2764,7 +2764,7 @@ function library:Load(options)
 	local name = "chinaboom"
 	local sizeX = options.sizex or 450
 	local sizeY = options.sizey or 500
-	local theme = options.theme and options.theme or "chinaboom"
+	local theme = options.theme and options.theme or "AirHub"
 	local overrides = options.themeoverrides or {}
 	local folder = options.folder
 	local extension = options.extension
@@ -3795,3 +3795,6 @@ function library:Load(options)
 end
 
 return library
+
+-- Forked from https://github.com/vozoid/ui-libraries/blob/main/drawing/void/source.lua
+-- Edited by Exunys for AirHub V2
