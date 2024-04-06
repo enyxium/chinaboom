@@ -3783,7 +3783,7 @@ do
             Color = "textcolor"
         }
         --
-        utility:LoadImage(toggle__gradient, "gradient", "https://i.imgur.com/5hmlrjX.png")
+        utility:LoadImage(toggle__gradient, "gradient", "https://i.imgur.com/tVqy0nL.png")
         --
         function toggle:Get()
             return toggle.current
@@ -4752,7 +4752,7 @@ do
             Color = "textcolor"
         }
         --
-        utility:LoadImage(slider__gradient, "gradient", "https://i.imgur.com/5hmlrjX.png")
+        utility:LoadImage(slider__gradient, "gradient", "https://i.imgur.com/tVqy0nL.png")
         --
         function slider:Set(value)
             local oldval = slider.current
@@ -5291,7 +5291,7 @@ do
         }, section.visibleContent);dropdown["dropdown_image"] = dropdown_image
         --
         utility:LoadImage(dropdown_image, "arrow_down", "https://i.imgur.com/tVqy0nL.png")
-        utility:LoadImage(dropdown__gradient, "gradient", "https://i.imgur.com/5hmlrjX.png")
+        utility:LoadImage(dropdown__gradient, "gradient", "https://i.imgur.com/tVqy0nL.png")
         --
         if max then
             local lastupdate = dropdown.scrollindex
