@@ -563,7 +563,7 @@ do
             if window.currentContent.dropdown and window.currentContent.dropdown.open then
                 local dropdown = window.currentContent.dropdown
                 dropdown.open = not dropdown.open
-                utility:LoadImage(dropdown.dropdown_image, "arrow_down", "https://i.imgur.com/tVqy0nL.png")
+                utility:LoadImage(dropdown.dropdown_image, "arrow_down", "https://i.imgur.com/NakfHv4.png") 
                 --
                 for i,v in pairs(dropdown.holder.drawings) do
                     utility:Remove(v)
@@ -578,7 +578,7 @@ do
             elseif window.currentContent.multibox and window.currentContent.multibox.open then
                 local multibox = window.currentContent.multibox
                 multibox.open = not multibox.open
-                utility:LoadImage(multibox.multibox_image, "arrow_down", "https://i.imgur.com/tVqy0nL.png")
+                utility:LoadImage(multibox.multibox_image, "arrow_down", "https://i.imgur.com/NakfHv4.png")
                 --
                 for i,v in pairs(multibox.holder.drawings) do
                     utility:Remove(v)
@@ -1580,7 +1580,7 @@ do
             if window.currentContent.dropdown and window.currentContent.dropdown.open then
                 local dropdown = window.currentContent.dropdown
                 dropdown.open = not dropdown.open
-                utility:LoadImage(dropdown.dropdown_image, "arrow_down", "https://i.imgur.com/tVqy0nL.png")
+                utility:LoadImage(dropdown.dropdown_image, "arrow_down", "https://i.imgur.com/NakfHv4.png")
                 --
                 for i,v in pairs(dropdown.holder.drawings) do
                     utility:Remove(v)
@@ -1595,7 +1595,7 @@ do
             elseif window.currentContent.multibox and window.currentContent.multibox.open then
                 local multibox = window.currentContent.multibox
                 multibox.open = not multibox.open
-                utility:LoadImage(multibox.multibox_image, "arrow_down", "https://i.imgur.com/tVqy0nL.png")
+                utility:LoadImage(multibox.multibox_image, "arrow_down", "https://i.imgur.com/NakfHv4.png")
                 --
                 for i,v in pairs(multibox.holder.drawings) do
                     utility:Remove(v)
@@ -3333,7 +3333,7 @@ do
                 Visible = page.open
             }, playerList.visibleContent)
             --
-            utility:LoadImage(button_image, "arrow_down", "https://i.imgur.com/tVqy0nL.png")
+            utility:LoadImage(button_image, "arrow_down", "https://i.imgur.com/NakfHv4.png")
             --
             function button:Update(Selection)
                 local Visible = Selection ~= nil and (Selection[1] ~= localplayer) or false
@@ -3383,7 +3383,7 @@ do
             --
             function button:Close()
                 button.open = not button.open
-                utility:LoadImage(button_image, "arrow_down", "https://i.imgur.com/tVqy0nL.png")
+                utility:LoadImage(button_image, "arrow_down", "https://i.imgur.com/NakfHv4.png")
                 --
                 for i,v in pairs(button.holder.drawings) do
                     utility:Remove(v)
